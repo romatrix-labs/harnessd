@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "harnessd"
+version = "0.0.1"
+description = "Minimal, model-agnostic harness for LLM agents: tool permissions, draft-commit approvals, verification, cost caps, and traces."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{ name = "Rohiit Chaurasiya" }]
+keywords = ["llm", "ai-agents", "harness", "guardrails", "fastapi"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/romatrix-labs/harnessd"
+Repository = "https://github.com/romatrix-labs/harnessd"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/harnessd"]
